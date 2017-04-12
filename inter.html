@@ -13,6 +13,12 @@
   <!-- This is a comment, by the way -->
 
   <!--<link rel="stylesheet" href="sample.css">-->
+
+  <style>
+    input[type=search] {
+      background: url(magnifyingglass.png) right no-repeat)
+    }
+  </style>
 </head>
 
 <body>
@@ -45,28 +51,51 @@
     </fieldset>
     <fieldset>
       <legend>Address</legend>
+
+      <label for="email_address">Email address</label>
+      <input type="email" placeholder="you@somewhere.com" name="email_address" id="email_address">
+
+      <input name="query" autofocus>
+
       <p>Address <textarea name="address"></textarea></p>
       <p>Postal code <input name="postcode"></p>
     </fieldset>
+
+    <input name="country" list="country_name">
+    <datalist id="country_name">
+      <option value="Afghanistan">
+        <option value="Albania">
+          <option value="Algeria">
+            <option value="Andorra">
+              <option value="Armenia">
+                <option value="Australia">
+                  <option value="Austria">
+                    <option value="Azerbaijan">
+                      <!-- etc. -->
+    </datalist>
     <!-- etc. -->
 
     <select name="country">
-      <optgroup label="Africa">
-          <option value="gam">Gambia</option>
-          <option value="mad">Madagascar</option>
-          <option value="nam">Namibia</option>
-      </optgroup>
-      <optgroup label="Europe">
-          <option value="fra">France</option>
-          <option value="rus">Russia</option>
-          <option value="uk">UK</option>
-      </optgroup>
-      <optgroup label="North America">
-          <option value="can">Canada</option>
-          <option value="mex">Mexico</option>
-          <option value="usa">USA</option>
-      </optgroup>
-  </select>
+        <optgroup label="Africa">
+            <option value="gam">Gambia</option>
+            <option value="mad">Madagascar</option>
+            <option value="nam">Namibia</option>
+        </optgroup>
+        <optgroup label="Europe">
+            <option value="fra">France</option>
+            <option value="rus">Russia</option>
+            <option value="uk">UK</option>
+        </optgroup>
+        <optgroup label="North America">
+            <option value="can">Canada</option>
+            <option value="mex">Mexico</option>
+            <option value="usa">USA</option>
+        </optgroup>
+    </select>
+
+    <input type="number" name="quantity" step="2" min="20" max="30">
+
+    <input type="search" name="search">
 
   </form>
 
