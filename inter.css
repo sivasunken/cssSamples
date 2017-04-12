@@ -1,13 +1,8 @@
-#top {
-  background-color: #ccc;
-  padding: 1em
-}
-
-#top h1 {
-  color: #ff0;
-}
-
-#top p {
-  color: red;
-  font-weight: bold;
+p {
+    font: 14px/1.5 "Times New Roman", times, serif;
+    padding: 30px 10px;
+    border: 1px black solid;
+    border-width: 1px 5px 5px 1px;
+    border-color: red green blue yellow;
+    margin: 10px 50px;
 }
